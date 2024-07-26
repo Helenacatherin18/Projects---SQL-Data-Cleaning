@@ -1,4 +1,5 @@
 # Projects---SQL-Data-Cleaning
+
 -- Data Cleaning
 
 USE world_layoffs1;
@@ -58,7 +59,8 @@ CREATE TABLE `layoffs_staging2` (
   `company` text,
   `location` text,
   `industry` text,
-  `total_laid_off` int DEFAULT NULL,
+  `tot[layoffs.csv](https://github.com/user-attachments/files/16386441/layoffs.csv)
+al_laid_off` int DEFAULT NULL,
   `percentage_laid_off` text,
   `date` text,
   `stage` text,
@@ -82,7 +84,8 @@ FROM layoffs_staging2
 WHERE row_num >1;
 -- Deleting
 DELETE
-FROM layoffs_staging2
+FROM [layoffs.csv](https://github.com/user-attachments/files/16386444/layoffs.csv)
+layoffs_staging2
 WHERE row_num >1;
 
 SELECT *
